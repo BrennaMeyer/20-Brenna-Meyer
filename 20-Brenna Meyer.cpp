@@ -10,7 +10,24 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    const float paintCoverage = 340;        //square feet per gallon
+
+    int height = 6,         // Feet
+        length = 100,       // Feet 
+        area = height * length,
+
+        totalArea = area * 2,
+        gallonsNeeded = totalArea / paintCoverage;
+       
+    cout << endl
+        << "Height =" << height << "ft"<< endl
+        << "Lenght =" << length << "ft" << endl
+        << "Total Area =" << totalArea << "sqft" << endl
+        << "Coverage Per Gallon =" << paintCoverage << "sqft" << endl
+        << "Gallons Needed =" << gallonsNeeded << endl
+        << endl;
+
+        return 0;
 }
 
 
