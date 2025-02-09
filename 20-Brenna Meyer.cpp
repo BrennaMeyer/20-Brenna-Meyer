@@ -6,15 +6,24 @@
 // wooden fence that is 6 feet high and 100 feet long.
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
+
+// int height = 6,         // Feet
+//length = 100,       // Feet 
 
 int main()
 {
     const float paintCoverage = 340;        //square feet per gallon
 
-    int height = 6,         // Feet
-        length = 100,       // Feet 
-        area = height * length,
+    double height;
+    cout << "Please enter the fence height:";
+    cin >> height;
+    double length;
+    cout << "Please enter the fence length:";
+    cin >> length;
+
+       double area = height * length,
 
         totalArea = area * 2,
         gallonsNeeded = totalArea / paintCoverage;
